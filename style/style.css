@@ -1,0 +1,11 @@
+@media (max-width: 760px) {
+    nav {
+        /* css rules */
+    }
+}
+#welcome-section {
+    height: vh 100%;
+}
+nav {
+    /* navbar always at top of viewport */
+}
