@@ -3,9 +3,49 @@
         /* css rules */
     }
 }
-#welcome-section {
-    height: vh 100%;
+#navbar {
+    background-color: #333;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left:0;
 }
-nav {
-    /* navbar always at top of viewport */
+#navbar a {
+    padding: 14px 20px;
+    float: right;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(247, 242, 242);
+}
+#navbar a:hover {
+    background-color: rgb(238, 235, 235);
+    color: black;
+}
+#welcome-section {
+    text-align: center;
+    margin: 100px 0;
+}
+#welcome-section h1 {
+    font-size: 60px;
+}
+#welcome-section p {
+    font-size: 20px;
+}
+#welcome-section h2 {
+}
+#projects {
+    width: 100%;
+    text-align: center;
+}
+#project1 {
+    width: 25%;
+    display: inline-block;
+    /* border: solid black; */
+    margin: 20px 20px;
+    padding-bottom: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+img {
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
