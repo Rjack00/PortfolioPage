@@ -15,6 +15,7 @@ body {
     top: 0;
     left: 0;
 }
+/* //////// navbar */
 #navbar {
     background-color: rgb(22, 22, 22);
     position: fixed;
@@ -22,21 +23,71 @@ body {
     top: 0;
     left:0;
     box-shadow: 0 1px 10px black;
+    z-index: 10;
 }
-#navbar a {
-    padding: 14px 20px;
+#navbar ul {
+    list-style-type: none;
+    margin: 0 0 0 0;
+    padding-left: 20px;
+}
+#ul1 {
+    display: inline-block;
+    padding-top: 5px;
+}
+#ul1 a {
+    padding: 5px 5px;
+}
+#ul2 {
     float: right;
+    padding: 14px 20px;
+}
+#navbar li {
+    display: inline-block;
+    vertical-align: middle;
+}
+.logo-name h4 {
+    display: inline;
+    margin: auto;
+    color: white;
+    font-family: cambria;
+    font-weight: 100;
+    font-size: 20px;
+    padding-bottom: 15px;
+    transition: color 0.8s;
+}
+
+.logo-name h4:hover {
+    color: darkorange;
+    transition-timing-function: ease-in-out;
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+#logo-img {
+    width: 30px;
+    height: 30px;
+    margin-top: 0;
+    padding-top: 5px;
+    object-fit: cover;
+    transition: transform 0.6s;
+}
+#logo-img:hover {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    transition-timing-function: ease-in-out;
+}
+#ul2  a {
+    padding: 14px 20px;
     text-decoration: none;
     font-size: 20px;
     color: rgb(247, 242, 242);
 }
-#navbar a:hover {
+#ul2 a:hover {
     background-color: #282828;
     color: white;
 }
-#links {
-    margin-right: 20px;
-}
+/* /////////////////////////// */
 #welcome-section {
     text-align: center;
     margin: 50px 0;
@@ -84,6 +135,7 @@ hr {
     margin-bottom: 150px;
     margin-top: 50px;
     padding-top: 35px;
+    text-decoration: none;
 }
 #project1 {
     color: white;
@@ -91,16 +143,23 @@ hr {
     display: inline-block;
     /* border: solid black; */
     margin: 60px 20px 0px 20px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     box-shadow: 0 8px 14px black;
     background-color: #111010;
-    opacity: 1;
+    opacity: 0.8;
 }
+#project1:hover {
+    transform: scale(1.2);
+    opacity: 1;
+    transition: 0.3s;
+}
+
     
 img {
     width: 95%;
     box-shadow: 0 2px 4px 0 black;
     margin-top: 7px;
+    margin-bottom: 0;
 }
 #footer {
     background-color: rgb(14, 13, 13);
@@ -118,15 +177,16 @@ img {
     text-decoration: none;
     font-size: 20px;
     color: rgb(247, 242, 242);
+    transition: color 0.5s;
 }
 #footer a:hover {
-    background-color: #282828;
-    color: white;
+    color: darkorange;
+    transition-timing-function: ease-in-out;
 }
+
 @media (max-width: 750px) {
     body {
         background-image: url("http://45.media.tumblr.com/020c1b3e9a578e71a257056268316f73/tumblr_nnw60rXiQL1s4fz4bo1_500.gif");
-
     }
 }
 @media (min-width: 751px) {
