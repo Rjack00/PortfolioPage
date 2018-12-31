@@ -145,7 +145,7 @@ hr {
 #projects {
     width: 100%;
     text-align: center;
-    margin-bottom: 150px;
+    margin-bottom: 80px;
     margin-top: 50px;
     padding-top: 35px;
     text-decoration: none;
@@ -184,11 +184,22 @@ img {
     width: 50px;
     opacity: 0.03;
 }
+.experience {
+    color: white;
+    font-weight: 100;
+    text-align: center;
+    margin-bottom: 75px;
+    word-spacing: 4px;
+    font-size: 15px;
+}
+.experience .p1 {
+    font-size: 19px;
+}
+/* //////// FOOTER /////////// */
 #arrow-image:hover {
     transform: scale(1.5);
     opacity: 0.03;
 }
-/* //////// FOOTER /////////// */
 #footer {
     background-color: rgb(14, 13, 13);
     position: relative;
